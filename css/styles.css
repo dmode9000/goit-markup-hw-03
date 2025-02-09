@@ -1,0 +1,225 @@
+/* #region global styles */
+:root {
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --dark-color: #2e2f42;
+  --success-color: #31d0aa;
+  --text-color: #434455;
+  --subtle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --modal-overlay-color: rgba(46, 47, 66, 0.4);
+  --hero-background-color: rgba(46, 47, 66, 0.7);
+  --white-background-color: #fff;
+  --modal-background-color: #fcfcfc;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  color: var(--text-color);
+}
+.visually-hidden {
+}
+/* remove list dots */
+ul {
+  list-style-type: none;
+}
+/* remove link underline */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* #endregion global styles */
+
+/* #region Navigation */
+.navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+/* #region Logo */
+.nav-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+.nav-logo span {
+  color: var(--dark-color);
+}
+/* #endregion Logo */
+
+/* #region Menu */
+.nav-list {
+}
+.nav-item-link:hover,
+.nav-item-link:focus,
+.nav-item-link:active {
+  color: var(--pressed-state-color);
+  /* TODO не зрозуміло що робити з підкресленням Active на Style Guide */
+}
+/* #endregion Menu */
+
+/* #region Contacts */
+.contacts {
+  /* font-weight: 400; */
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.contacts-list {
+}
+.contacts-item-link:hover,
+.contacts-item-link:focus,
+.contacts-item-link:active {
+  color: var(--pressed-state-color);
+}
+/* #endregion Contacts */
+
+/* #endregion Navigation */
+
+/* #region Hero Section */
+.hero {
+  /* TODO помилка в макеті колір hero-background не відповідає style guide*/
+  background-color: var(--dark-color);
+  text-align: center;
+  color: var(--white-background-color);
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.hero button {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: inherit;
+  background-color: var(--primary-brand-color);
+  border: none;
+  /* TODO не зрозуміло чому не вміщається текст якщо задати ширину з фігми */
+}
+.hero button:hover,
+.hero button:focus,
+.hero button:active {
+  background-color: var(--pressed-state-color);
+}
+/* #endregion Hero Section */
+
+/* #region Features Section */
+.feature-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+.feature-item-txt {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+/* #endregion Features Section */
+
+/* #region Team Section */
+.team {
+  background: var(--light-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+.team-list {
+}
+.team-item {
+  background: var(--white-background-color);
+}
+.team-item > img {
+}
+.team-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--dark-color);
+}
+.team-item-txt {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--text-color);
+}
+/* #endregion Team Section */
+
+/* #region Portfolio Section */
+.portfolio {
+}
+.portfolio > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+.portfolio-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+.portfolio-item-txt {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+/* #endregion Portfolio Section */
+
+/* #region Footer */
+.footer {
+  background: var(--dark-color);
+}
+.footer-logo-lnk {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-brand-color);
+}
+.footer-logo-lnk > span {
+  color: var(--light-color);
+}
+.footer > p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+}
+/* #endregion Footer */
