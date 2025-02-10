@@ -172,7 +172,11 @@ header .container {
   letter-spacing: 0.02em;
   /* positioning */
   margin-bottom: 48px;
-  max-width: 496px; /* TODO запитати викладача *
+
+  /* TODO запитати викладача */
+  max-width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-btn {
@@ -189,8 +193,12 @@ header .container {
   /* width: 169px; */
   /* height: 56px; */
   padding: 16px 32px;
-  min-width: 169px; /* TODO запитати викладача */
-  display: block; /* TODO запитати викладача */
+
+  /* TODO запитати викладача */
+  min-width: 169px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero button:hover,
