@@ -369,7 +369,7 @@ header .container {
   text-transform: uppercase;
   color: var(--primary-brand-color);
   /* positioning */
-  display: block;
+  display: inline-block;
   margin-bottom: 16px;
 }
 .footer-logo-lnk .footer-logo-light {
