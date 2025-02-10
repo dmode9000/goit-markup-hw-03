@@ -161,8 +161,7 @@ header .container {
   text-align: center;
   color: var(--white-background-color);
   background-color: var(--dark-color);
-  /* display settings */
-  /* WARNING reassign padding cause of 188px on the figma template */
+  /* positioning */
   padding: 188px 0;
 }
 
