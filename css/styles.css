@@ -107,7 +107,7 @@ header .container {
   color: var(--primary-brand-color);
   margin-right: 76px;
 }
-.nav-logo span {
+.nav-logo .nav-logo-dark {
   color: var(--dark-color);
 }
 .nav-list {
